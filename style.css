@@ -1,0 +1,178 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #e0f7ff, #ffffff);
+  color: #0a2342;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #0077ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #0a2342;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover, 
+.nav-links li a.active {
+  color: #0077ff;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url('https://www.transparenttextures.com/patterns/cubes.png');
+  background-size: cover;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #0077ff;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Glass Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: transform 0.3s ease-in-out;
+}
+
+.glass-card:hover {
+  transform: scale(1.05);
+}
+
+/* About Section */
+.about {
+  padding: 100px 50px;
+  text-align: center;
+}
+
+/* Team Section */
+.team {
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.team-member h3 {
+  color: #0077ff;
+}
+
+/* Contact Section */
+.contact {
+  padding: 100px 50px;
+  text-align: center;
+}
+
+.contact-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-box input, 
+.contact-box textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.contact-box button {
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* RGB Animated Button */
+.btn-rgb {
+  background: linear-gradient(270deg, red, green, blue);
+  background-size: 600% 600%;
+  animation: rgbShift 6s ease infinite;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.btn-rgb:hover {
+  transform: scale(1.1);
+}
+
+@keyframes rgbShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  margin-top: 50px;
+}
