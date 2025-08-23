@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <title>Form Submitted</title>
   <style>
     body {
@@ -63,6 +64,13 @@
       box-shadow: 0 6px 16px rgba(0, 123, 255, 0.6);
       transform: translateY(-2px);
     }
+    .gradient-check {
+  font-size: 32px; /* adjust size */
+  background: linear-gradient(90deg, #0ea5e9, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
 
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(20px); }
@@ -72,9 +80,11 @@
 </head>
 <body>
   <div class="success-card">
-    <h2>✅ Form Submitted!</h2>
+   <i class="fas fa-check-circle gradient-check"></i>
+    <h2>Form Submitted!</h2>
     <p>Thank you for contacting us. We’ll get back to you soon.</p>
     <a href="index.html">⬅ Back to Home</a>
   </div>
 </body>
 </html>
+

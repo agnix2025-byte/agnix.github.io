@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Agnix</title>
+  <title>AgniX – Transforming Ideas into Intelligent Services</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
   <div class="bg-gradient-waves"></div>
   <canvas id="particles"></canvas>
   <header class="site-header">
-    
-    <!-- Navbar --> 
      <header class="navbar"> 
       <div class="logo"> 
         <a href="#home">
@@ -58,22 +57,36 @@
 </section>
   <section id="services" class="services-section">
     <h2 class="section-title">Our Services</h2>
-    <div class="services-grid">
-      <div class="service-box">
-        <h3>?</h3>
-        <p>-------</p>
-      </div>
-      <div class="service-box">
-        <h3>?</h3>
-        <p>-------</p>
-      </div>
-      <div class="service-box">
-        <h3>?</h3>
-        <p>-------</p>
-      </div>
-      <div class="service-box">
-        <h3>?</h3>
-        <p>-------</p>
+    <div class="services-slider-wrap">
+      <div class="services-slider-track" id="servicesSliderTrack">
+        <div class="service-slide">
+          <div class="service-box">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Website creation</h3>
+            <p>End-to-end website creation that blends design, functionality, and performance to meet your goals.</p>
+          </div>
+        </div>
+        <div class="service-slide">
+          <div class="service-box">
+            <i class="fas fa-brush"></i>
+            <h3>graphic designing</h3>
+            <p>Creative design solutions tailored to your business, from digital graphics to print-ready visuals.</p>
+          </div>
+        </div>
+        <div class="service-slide">
+          <div class="service-box">
+            <i class="fas fa-mobile-alt"></i> 
+            <h3>UI/UX Design</h3>
+            <p>Intuitive and user-focused UI/UX designs that enhance digital experiences.                     </p>
+          </div>
+        </div>
+        <div class="service-slide">
+          <div class="service-box">
+            <i class="fas fa-desktop"></i> 
+            <h3>App Development</h3>
+            <p>Custom mobile and web apps built with speed, simplicity, and scalability in mind.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -110,13 +123,30 @@
       alert("Error submitting form. Try again later.");
     }
   });
-</script>
-
-
-    
+</script>    
   </section>
   <footer class="footer">
-    <!--<p>© 2025 AgniX. All rights reserved.</p>-->
+    <div class="footer-content">
+      <!--<p>© 2025 AgniX. All rights reserved.</p> -->
+      <p>                                      </p>
+      <div class="social-media">
+        <a href="https://www.facebook.com/profile.php?id=61579915910685" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/agnix_est2025/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://x.com/Agnix_2025" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+          <i class="fab fa-x-twitter"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/agnix-tech-405a6437b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.youtube.com/@Agnix-tech" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
   </footer>
   <script src="script.js"></script>
 </body>
